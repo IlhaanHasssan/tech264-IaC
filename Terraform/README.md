@@ -30,6 +30,7 @@ Terraform is used because it offers several advantages:
 - **Modularity**: Enables reusing code with modules, making configurations more manageable and scalable.
 - **Declarative**: Declare what you want, don't need to specify how to do it.
 - **Cloud Agnostic**: can deploy to any cloud platform because it uses different cloud providers. Each provider maintains their own plug-ins(e.g: Azure has an Azure plug-in in Terraform that will interface with the API of Azure). Each cloud provider maintains their own plug-ins.
+- **Easy to use**: compared to other tools in the same space
 
 ## ***Alternatives to Terraform*** 🧟‍♀️
 
@@ -87,7 +88,7 @@ When Terraform needs access to AWS, it looks for credentials in the following or
 
 - Terraform makes it easy to manage multiple environments (like production, testing, and development) by allowing you to reuse the same infrastructure definitions with different configurations. The benefits include:
 
-  - **Consistency**: You ensure that all environments are consistent, reducing bugs that arise from manual configuration differences.
+  - **Consistency**: You ensure that all environments are consistent, reducing bugs that arise from manual configuration differences(e.g: testing can be carried out in a consistent environment with matching dependencies to ensure that the tests in the **QA** environment run the same in the PROD environment, testing resources can easily be disposed of when the tests are no longer necessary, **PROD** should only differ in scalabililty).
   - **Separation of Concerns**: You can isolate environments to prevent accidental changes in production while testing new features.
   - **Version Control**: Track infrastructure changes in different environments with version control, which adds traceability and accountability.
   - **Automation**: Each environment can be easily deployed, updated, or destroyed through automated scripts, saving time and reducing errors.
