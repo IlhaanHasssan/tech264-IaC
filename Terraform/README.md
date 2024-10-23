@@ -12,6 +12,7 @@
   - [***Why use Terraform for different environments (e.g., production, testing, etc.)*** 🖥️](#why-use-terraform-for-different-environments-eg-production-testing-etc-️)
   - [***Downloading Terraform*** 💾](#downloading-terraform-)
     - [***Adding my credentials to system variables in my computer*** 🔐](#adding-my-credentials-to-system-variables-in-my-computer-)
+  - [**Creating a terraform repo with a .gitignore**](#creating-a-terraform-repo-with-a-gitignore)
 
 
 ## ***What is Terraform? What is it used for?*** 🏭
@@ -132,3 +133,14 @@ When Terraform needs access to AWS, it looks for credentials in the following or
 5. In a **new** gitbash window, check your env variables have saved using ***`printenv <env>`*** command
 
 ![alt text](image-2.png)
+
+## **Creating a terraform repo with a .gitignore**
+1. Create a local directory named **`tech264-Terraform`**
+2. Add a folder named **Terraform**
+3. Outside of the terraform folder, inside the main folder, create a **.gitignore** file
+4. Add the names of all the files we would like to ignore (meaning we won't be able to push those files to github) to maintain security.
+<br>
+
+![alt text](image-5.png)
+
+<br>
