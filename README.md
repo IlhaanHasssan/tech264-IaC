@@ -32,10 +32,10 @@
 - **Puppet**
 
 ## ***What is configuration management (CM)?*** 🖥️
-**Configuration Management (CM)** is the practice of managing and maintaining the desired state of an organization's infrastructure, ensuring systems are configured correctly and consistently.
+**Configuration Management (CM)** is the practice of managing and maintaining the desired state of an organization's infrastructure, ensuring systems are configured correctly and consistently. These are tools like Puppet, Chef and Ansible.
 
 ## ***What is provisioning of infrastructure? Do CM tools do it? 🔦***
-**Provisioning of infrastructure** refers to the process of setting up and configuring resources such as servers, networks, and storage. **Yes**, some CM tools like Ansible, Chef, and Puppet can also handle infrastructure provisioning in addition to configuration management.
+**Provisioning of infrastructure** refers to the process of setting up and configuring resources such as servers, networks, and storage. **Yes**, some CM tools like Ansible, Chef, and Puppet can also handle infrastructure provisioning in addition to configuration management. Tools for this include Terraform ! *Ansible can do this though it isn't it's primary function so it isn't as good as terraform*
 
 ## ***What is Ansible and how does it work?*** ⭕
 **Ansible** is an open-source automation tool for configuration management, application deployment, and infrastructure provisioning. It works by using **playbooks** (YAML files) to define automation tasks, and it operates agentlessly over SSH or PowerShell.
