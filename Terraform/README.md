@@ -10,6 +10,7 @@
     - [***Best practices for supplying AWS credentials to Terraform*** 🗝️](#best-practices-for-supplying-aws-credentials-to-terraform-️)
     - [***How AWS credentials should never be passed to Terraform*** ⛔](#how-aws-credentials-should-never-be-passed-to-terraform-)
   - [***Why use Terraform for different environments (e.g., production, testing, etc.)*** 🖥️](#why-use-terraform-for-different-environments-eg-production-testing-etc-️)
+  - [***Downloading Terraform***](#downloading-terraform)
     - [***Adding my credentials to system variables in my computer***](#adding-my-credentials-to-system-variables-in-my-computer)
 
 
@@ -89,10 +90,31 @@ When Terraform needs access to AWS, it looks for credentials in the following or
   - **Version Control**: Track infrastructure changes in different environments with version control, which adds traceability and accountability.
   - **Automation**: Each environment can be easily deployed, updated, or destroyed through automated scripts, saving time and reducing errors.
 
+
+## ***Downloading Terraform***
+1. Find the **correct  version** you would like to download online at [the terraform website](https://developer.hashicorp.com/terraform/install)
+
+<br>
+
+![alt text](image.png)
+1. Once it is downloaded, create a new folder in your C: drive named **`Hashicorp`** with a folder named **`Terraform`** inside
+2. Move the **`terraform.exe`** from your downloads into this new folder and delete from downloads
+3. Add the new location into **path** in your **environment variables** 
+4. You should be able to run terraform from anywhere in your local machine now, test this by running the command **`terraform --version`** in a **new** Git Bash window
+<br>
+![alt text](image-1.png)
+<br>
+
+---
 ### ***Adding my credentials to system variables in my computer***
 1. **Download** the CSV file that Ramon sent and save it in your **.ssh/** folder and delete your credentials for your downloads
 2. In your windows search bar, search **edit the environment variables** and press **enter**
+<br>
+
+![alt text](image-3.png)
+<br>
 3. Click ***New*** under system variables, enter the **variable name** and **variable value**
    - Name should be **AWS_ACCESS_KEY_ID** for first value in the CSV and **AWS_SECRET_ACCESS_KEY** for the second value 
 4. Select **OK** twice to save your changes
 5. In a **new** gitbash window, check your env variables have saved using ***`printenv <env>`*** command
+![alt text](image-2.png)
