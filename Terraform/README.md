@@ -143,4 +143,33 @@ When Terraform needs access to AWS, it looks for credentials in the following or
 
 ![alt text](image-5.png)
 
+5. Create a main.tf file with details to launch your ec2 instance, including the region, resource, image type, instance type, public IP and tags.
 <br>
+
+![alt text](image-6.png)
+
+<br>
+
+6. Make sure you have **saved** your main.tf file before opening a Git Bash window and running the `terraform init` command 
+<br>
+
+![alt text](image-7.png)
+
+
+7. Next, run the `terraform fmt` to format your main.tf file to correct indents and general formatting errors
+8. Run the `terraform plan` command to show you a preview of your ec2 instance, It checks the current setup and compares it with the code you've written, telling you what will be created, modified, or destroyed. This way, you can review the changes before taking any real action. Enter **yes** when prompted in the git bash window
+<br>
+
+![alt text](terraform-images/terraform-plan.png)
+
+9. Now that your ec2 instance is planned out, you can run the `terraform apply` command to create your instance and once again, enter **yes** when prompted
+<br>
+
+![alt text](image-8.png)
+
+10. Once you are done with the instance, you can run the `terraform destroy` command to terminate your ec2 instance
+<br>
+
+![alt text](image-9.png)
+
+---
