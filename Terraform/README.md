@@ -101,6 +101,11 @@ When Terraform needs access to AWS, it looks for credentials in the following or
 1. Once it is downloaded, create a new folder in your C: drive named **`Hashicorp`** with a folder named **`Terraform`** inside
 2. Move the **`terraform.exe`** from your downloads into this new folder and delete from downloads
 3. Add the new location into **path** in your **environment variables** 
+<br>
+
+![alt text](image-4.png)
+
+<br>
 4. You should be able to run terraform from anywhere in your local machine now, test this by running the command **`terraform --version`** in a **new** Git Bash window
 <br>
 
@@ -115,6 +120,7 @@ When Terraform needs access to AWS, it looks for credentials in the following or
 <br>
 
 ![alt text](image-3.png)
+
 <br>
 3. Click ***New*** under system variables, enter the **variable name** and **variable value**
    - Name should be **AWS_ACCESS_KEY_ID** for first value in the CSV and **AWS_SECRET_ACCESS_KEY** for the second value 
