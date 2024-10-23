@@ -16,7 +16,7 @@
 
 ## ***What is Terraform? What is it used for?*** 🏭
 
-**Terraform** is an open-source tool created by HashiCorp that allows you to define and provision infrastructure using a configuration language. Instead of manually setting up cloud resources like servers, databases, and networks, you can use Terraform to write code that automates this process. It's widely used for managing resources across various cloud providers such as AWS, Google Cloud, and Azure.
+**Terraform** is an open-source tool created by HashiCorp that allows you to define and provision infrastructure using a configuration language. Instead of manually setting up cloud resources like servers, databases, and networks, you can use Terraform to write code that automates this process. It's widely used for managing resources across various cloud providers such as AWS, Google Cloud, and Azure.  Terraform uses HashiCorp Configuration Language (HCL) which can be converted to JSON and back again.
 
 ## ***Why use Terraform? The benefits?*** 👍🏾
 
@@ -28,6 +28,8 @@ Terraform is used because it offers several advantages:
 - **Automation**: Automates the provisioning and de-provisioning of infrastructure, saving time and reducing manual work.
 - **State Management**: Keeps track of the current state of your infrastructure, so changes are automatically applied based on differences.
 - **Modularity**: Enables reusing code with modules, making configurations more manageable and scalable.
+- **Declarative**: Declare what you want, don't need to specify how to do it.
+- **Cloud Agnostic**: can deploy to any cloud platform because it uses different cloud providers. Each provider maintains their own plug-ins(e.g: Azure has an Azure plug-in in Terraform that will interface with the API of Azure). Each cloud provider maintains their own plug-ins.
 
 ## ***Alternatives to Terraform*** 🧟‍♀️
 
@@ -56,7 +58,7 @@ It's especially popular among companies that use multi-cloud environments or nee
 
 **Orchestration** in Infrastructure as Code (IaC) refers to the automated coordination and management of various infrastructure components. Instead of manually configuring each part, an orchestrator handles the process of building, configuring, and linking them together.
 
-Terraform acts as an **orchestrator** by automating the provisioning of cloud infrastructure. It takes care of the dependencies between resources, ensuring that things happen in the right order (e.g., creating a database before creating the application that uses it). It manages the entire lifecycle of infrastructure—from creation to updates and eventual teardown.
+Terraform acts as an **orchestrator** by automating the provisioning of cloud infrastructure. It takes care of the dependencies between resources, ensuring that things happen in the right order (e.g., creating a database before creating the application that uses it). It manages the entire lifecycle of infrastructure—from creation to updates and eventual teardown. Terraform sees infrastructure as immutable.
 
 ## ***Credentials*** 🔐
 
@@ -122,8 +124,10 @@ When Terraform needs access to AWS, it looks for credentials in the following or
 ![alt text](image-3.png)
 
 <br>
+
 3. Click ***New*** under system variables, enter the **variable name** and **variable value**
    - Name should be **AWS_ACCESS_KEY_ID** for first value in the CSV and **AWS_SECRET_ACCESS_KEY** for the second value 
 4. Select **OK** twice to save your changes
 5. In a **new** gitbash window, check your env variables have saved using ***`printenv <env>`*** command
+
 ![alt text](image-2.png)
