@@ -12,7 +12,7 @@
   - [***Why use Terraform for different environments (e.g., production, testing, etc.)*** 🖥️](#why-use-terraform-for-different-environments-eg-production-testing-etc-️)
   - [***Downloading Terraform*** 💾](#downloading-terraform-)
     - [***Adding my credentials to system variables in my computer*** 🔐](#adding-my-credentials-to-system-variables-in-my-computer-)
-  - [**Creating a terraform repo with a .gitignore** 🤷🏾‍♀️](#creating-a-terraform-repo-with-a-gitignore-️)
+  - [***Creating a terraform repo with a .gitignore*** 🤷🏾‍♀️](#creating-a-terraform-repo-with-a-gitignore-️)
     - [***Running Terraform*** ⏯️](#running-terraform-️)
 
 
@@ -135,7 +135,7 @@ When Terraform needs access to AWS, it looks for credentials in the following or
 
 ![alt text](image-2.png)
 
-## **Creating a terraform repo with a .gitignore** 🤷🏾‍♀️
+## ***Creating a terraform repo with a .gitignore*** 🤷🏾‍♀️
 
 1. Create a local directory named **`tech264-Terraform`**
 2. Add a folder named **Terraform**
