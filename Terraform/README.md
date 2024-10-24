@@ -14,13 +14,13 @@
     - [***Adding my credentials to system variables in my computer*** 🔐](#adding-my-credentials-to-system-variables-in-my-computer-)
   - [***Creating a terraform repo with a .gitignore*** 🤷🏾‍♀️](#creating-a-terraform-repo-with-a-gitignore-️)
     - [***Running Terraform*** ⏯️](#running-terraform-️)
-  - [***Pull vs Push Configuration Management (IaC)***](#pull-vs-push-configuration-management-iac)
-    - [***Pull Configuration Management***](#pull-configuration-management)
-    - [***Push Configuration Management***](#push-configuration-management)
-  - [***Tools Supporting Pull/Push Configuration***](#tools-supporting-pullpush-configuration)
-  - [***Does Terraform Use Push or Pull Configuration?***](#does-terraform-use-push-or-pull-configuration)
-  - [***Push vs Pull Configuration: Which is Better?***](#push-vs-pull-configuration-which-is-better)
-  - [***Desired State vs Current State***](#desired-state-vs-current-state)
+  - [***Pull vs Push Configuration Management (IaC)*** 🏗️](#pull-vs-push-configuration-management-iac-️)
+    - [***Pull Configuration Management*** 🦮](#pull-configuration-management-)
+    - [***Push Configuration Management*** 🫸🏾](#push-configuration-management-)
+  - [***Tools Supporting Pull/Push Configuration*** 🔨](#tools-supporting-pullpush-configuration-)
+  - [***Does Terraform Use Push or Pull Configuration?*** ⛈️](#does-terraform-use-push-or-pull-configuration-️)
+  - [***Push vs Pull Configuration: Which is Better?*** 🆚](#push-vs-pull-configuration-which-is-better-)
+  - [***Desired State vs Current State*** 🆚](#desired-state-vs-current-state-)
 
 
 ## ***What is Terraform? What is it used for?*** 🏭
@@ -177,7 +177,7 @@ When Terraform needs access to AWS, it looks for credentials in the following or
 
 ![alt text](terraform-images/terraform-plan.png)
 
-9. Now that your ec2 instance is planned out, you can run the `terraform apply` command to create your instance and once again, enter **yes** when prompted
+9. Now that your ec2 instance is planned out, you can run the `terraform apply` command to create your instance and once again, enter **yes** when prompted, this is when your EC2 instance is created!!
 <br>
 
 ![alt text](image-8.png)
@@ -189,19 +189,19 @@ When Terraform needs access to AWS, it looks for credentials in the following or
 
 ---
 
-## ***Pull vs Push Configuration Management (IaC)***
+## ***Pull vs Push Configuration Management (IaC)*** 🏗️
 
-### ***Pull Configuration Management***
+### ***Pull Configuration Management*** 🦮
 - In pull configuration, systems **pull** the desired state from a central server and apply it.
 - An agent running on each node fetches the configuration and ensures compliance with the desired state.
 
-### ***Push Configuration Management***
+### ***Push Configuration Management*** 🫸🏾
 - In push configuration, a central server **pushes** the desired state to the systems.
 - The server controls and sends the configuration directly to the target machines.
 
 ---
 
-## ***Tools Supporting Pull/Push Configuration***
+## ***Tools Supporting Pull/Push Configuration*** 🔨
 
 - **Pull-based tools**:
   - Puppet
@@ -214,18 +214,18 @@ When Terraform needs access to AWS, it looks for credentials in the following or
 
 ---
 
-## ***Does Terraform Use Push or Pull Configuration?***
+## ***Does Terraform Use Push or Pull Configuration?*** ⛈️
 - **Terraform uses push configuration**: It pushes the desired infrastructure state to the provider (e.g., AWS, Azure).
 
 ---
 
-## ***Push vs Pull Configuration: Which is Better?***
+## ***Push vs Pull Configuration: Which is Better?*** 🆚
 - **Push Configuration** is better for immediate, real-time control over infrastructure.
 - **Pull Configuration** is useful for environments where systems should self-manage their state over time.
 
 ---
 
-## ***Desired State vs Current State***
+## ***Desired State vs Current State*** 🆚
 - **Desired State**: The state that the system should be in (defined in code).
 - **Current State**: The actual state of the infrastructure at a given moment.
 - In both pull and push models, tools compare the **current state** to the **desired state** and apply changes to achieve compliance.
