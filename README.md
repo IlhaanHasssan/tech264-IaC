@@ -8,8 +8,8 @@
   - [***What is provisioning of infrastructure? Do CM tools do it? 🔦***](#what-is-provisioning-of-infrastructure-do-cm-tools-do-it-)
   - [***What is Ansible and how does it work?*** ⭕](#what-is-ansible-and-how-does-it-work-)
   - [***Who is using IaC and Ansible in the industry?*** ™️](#who-is-using-iac-and-ansible-in-the-industry-️)
-  - [***How Terraform and Ansible fit into the bigger picture***](#how-terraform-and-ansible-fit-into-the-bigger-picture)
-  - [***Greenfielding vs Brownfielding***](#greenfielding-vs-brownfielding)
+  - [***How Terraform and Ansible fit into the bigger picture*** 🖼️](#how-terraform-and-ansible-fit-into-the-bigger-picture-️)
+  - [***Greenfielding vs Brownfielding*** 💚🤎](#greenfielding-vs-brownfielding-)
 ## ***What is IaC?*** 💭
 **Infrastructure as Code (IaC)** is a method to manage and provision computing infrastructure using machine-readable configuration files, rather than manual processes.
 
@@ -50,7 +50,7 @@
 - **Telecommunications** (e.g., AT&T)
 
 
-## ***How Terraform and Ansible fit into the bigger picture***
+## ***How Terraform and Ansible fit into the bigger picture*** 🖼️
 <br>
 
 ![alt text](/tech264-docker-kubernetes/dk-images/image.png)
@@ -59,7 +59,7 @@
 
 ---
 
-## ***Greenfielding vs Brownfielding***
+## ***Greenfielding vs Brownfielding*** 💚🤎
 - Greenfielding means starting a project or development from scratch. Think of it as building on an empty "green field," where you have no existing structures or constraints to worry about. You get to design everything from the ground up, using the latest tools, technologies, and best practices without dealing with any outdated or legacy systems.
 
 - Brownfielding is the opposite—working on or improving an existing project or system. Imagine building on a "brown field" that already has old buildings or structures on it. In this case, you have to work with or around what’s already there, which may include outdated tech or design choices that make changes or upgrades more complicated.
